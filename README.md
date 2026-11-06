@@ -105,4 +105,4 @@ Set `includeMatchDetails` to true. Each match then carries H2H and odds from eve
 
 ## More scrapers
 
-Tennis is one of 15 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).
+Tennis is one of 17 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).
