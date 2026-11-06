@@ -72,14 +72,14 @@ Export as JSON, CSV or Excel, or pipe it into Google Sheets, Make, Zapier or n8n
 
 ## Pricing
 
-Pay per result. No monthly fee.
+Pay per result. No monthly fee. Prices drop on paid Apify plans.
 
-| Result | Per 1,000 |
-|---|---|
-| Match | $2 |
-| Match details add-on | +$3 |
-| Player profile | $3 |
-| Ranking row | $0.50 |
+| Result (per 1,000) | Free | Starter | Scale | Business |
+|---|---|---|---|---|
+| Match | $2.50 | $2.00 | $1.70 | $1.40 |
+| Match details add-on | +$3.50 | +$3.00 | +$2.50 | +$2.00 |
+| Player profile | $3.50 | $3.00 | $2.50 | $2.00 |
+| Ranking row | $0.60 | $0.50 | $0.40 | $0.30 |
 
 ## Limits
 
