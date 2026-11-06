@@ -1,5 +1,7 @@
 # Tennis Scraper
 
+![Tennis Scraper](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/tennis/banner.webp)
+
 Scrape tennis results, upcoming matches, betting odds, head-to-head and ATP/WTA rankings from TennisExplorer. ATP, WTA, Challenger and ITF. No login. Runs on [Apify](https://apify.com/smoldesk/tennis-scraper).
 
 ## What you get
