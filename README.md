@@ -2,10 +2,11 @@
 
 ![Tennis Scraper](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/tennis/banner.webp)
 
-Scrape tennis results, upcoming matches, betting odds, head-to-head and ATP/WTA rankings from TennisExplorer. ATP, WTA, Challenger and ITF. No login. Runs on [Apify](https://apify.com/smoldesk/tennis-scraper).
+Scrape live tennis scores, results, upcoming matches, betting odds, head-to-head and ATP/WTA rankings. ATP, WTA, Challenger and ITF. No login. Runs on [Apify](https://apify.com/smoldesk/tennis-scraper).
 
 ## What you get
 
+- **Live scores**: `matchStatus: "live"` returns every match in play (ATP/WTA tour, Challenger, WTA 125, UTR) with game points, server and win probability, joined to the pre-match odds.
 - **Matches**: date, status, tournament, round, surface, players, seeds, score, set scores and winner.
 - **Odds**: closing odds for both players and the implied probability.
 - **Match details** (optional): odds from every bookmaker, H2H, player bios, odds history and Over/Under, Asian Handicap and Correct Score markets.
@@ -83,7 +84,7 @@ Pay per result. No monthly fee. Prices drop on paid Apify plans.
 
 ## Limits
 
-- Not a live-score feed. A match in progress shows as `scheduled` until it finishes.
+- No live score for ITF matches. Live runs are snapshots: schedule them every few minutes.
 - Retirements are inferred from an unfinished last set, so a few can show as `finished`.
 - H2H is the record at the time you scrape, not at the time of the match.
 - Odds history is thin before about 2009 and for low-level ITF matches.
@@ -95,6 +96,9 @@ Not really. Official ATP and WTA data and most odds APIs are paid. This reads pu
 
 **Can I get historical tennis results with odds?**
 Yes. Set `startDate` and `endDate`. Results go back to the early 2000s and odds to about 2009.
+
+**Can I get live tennis scores?**
+Yes. Set `matchStatus` to `live`. Each match in play has the score, current game points, server and win probability, plus the pre-match odds. ITF is not covered live.
 
 **How do I get one tournament, like Wimbledon?**
 Paste the tournament URL in `tournamentUrls`, or set dates with `tournamentNames: ["Wimbledon"]`.
